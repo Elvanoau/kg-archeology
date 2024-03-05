@@ -48,4 +48,15 @@ Citizen.CreateThread(function()
             exports['qb-core']:HideText()
         end
     end)
+
+    local Blipv3 = Config.Zone.coords
+    local Blip = AddBlipForCoord(Blipv3.x, Blipv3.y, Blipv3.z)
+    SetBlipSprite (Blip, 273)
+    SetBlipDisplay(Blip, 4)
+    SetBlipScale  (Blip, 0.6)
+    SetBlipAsShortRange(Blip, true)
+    SetBlipColour(Blip, 0)
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentSubstringPlayerName("Archeology")     -- Name Of Bip Here
+    EndTextCommandSetBlipName(Blip)
 end)

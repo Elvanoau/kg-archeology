@@ -4,8 +4,8 @@ Config.Debug = false
 
 Config.Setup = {
     useBothItems = true,        -- If you want to use the trowel and brush
-    trowelName = "",      -- Name Of Your Trowel Item
-    brushName = "",       -- If useBothItems is false you can set this to nil
+    trowelName = "trowel",      -- Name Of Your Trowel Item
+    brushName = "brush",       -- If useBothItems is false you can set this to nil
     searchTime = {
         stage1 = 25,        -- In Seconds
         stage2 = 10,        -- In Seconds
@@ -13,7 +13,7 @@ Config.Setup = {
 }
 
 Config.Zone = {
-    coords = vector3(0.0, 0.0, 0.0)
+    coords = vector3(2720.01, 2980.41, 36.77),
     radius = 30.0,
 }
 

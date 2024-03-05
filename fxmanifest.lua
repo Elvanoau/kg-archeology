@@ -1,20 +1,22 @@
-fx_version 'cerulean'
-game 'gta5'
-author '_elvano'
-lua54 'yes'
+fx_version "cerulean"
+game "gta5"
+author "_elvano"
+lua54 "yes"
 
-shared_script {
-    "config.lua"
+shared_scripts {
+    "@PolyZone/client.lua",
+    "@PolyZone/CircleZone.lua",
+    "config.lua",
 }
 
 client_scripts {
-    "client.lua"
+    "client.lua",
 }
 
-server_script {
-    "server.lua"
+server_scripts {
+    "server.lua",
 }
 
 escrow_ignore {
-    'config.lua',
+    "config.lua",
 }
