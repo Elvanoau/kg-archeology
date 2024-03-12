@@ -15,6 +15,7 @@ RegisterServerEvent('kg-archaeology:server:Reward', function(inZone)
     end
 
     Player.Functions.AddItem(item, 1)
+    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item], "add", 1)
 end)
 
 QBCore.Functions.CreateUseableItem(Config.Setup.trowelName, function(source, item)
